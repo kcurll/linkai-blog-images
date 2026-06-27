@@ -11,6 +11,8 @@ This document defines the production prompt architecture for the Linkai Digital 
 ## Subject
 Construct the scene only from the specified Primary, Secondary and Supporting objects. Do not substitute objects.
 
+Every required object must appear exactly once unless the composition explicitly requires multiples. Missing required objects are a failed render. Extra objects are not permitted unless they are environmental only (surface, shadow, lighting or background).
+
 ## Composition
 Follow the specified composition exactly.
 
@@ -30,4 +32,4 @@ Use the approved reference image only for background, glow, lighting, materials,
 Unless explicitly requested, never substitute: clipboard, checklist, browser window, dashboard, folder, notebook, laptop, phone, calendar, document, paper, monitor or screen.
 
 ## QC
-Verify required objects, composition, style consistency and absence of text before accepting a render.
+Verify required objects, composition, style consistency, object count and absence of text before accepting a render.
